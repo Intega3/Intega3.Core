@@ -1,0 +1,16 @@
+TYPO3:
+  Flow:
+    security:
+      enable: TRUE
+      firewall:
+        rejectAll: FALSE
+        filters:
+          -
+            patternType:  'URI'
+            patternValue: '/.*/.*/.*'
+            interceptor:  'AccessGrant'
+      authentication:
+        authenticationStrategy: oneToken
+        providers:
+          DefaultProvider:
+            provider: PersistedUsernamePasswordProvider

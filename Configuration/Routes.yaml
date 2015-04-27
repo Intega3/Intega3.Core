@@ -1,0 +1,8 @@
+-
+  name: 'Homepage'
+  uriPattern: ''
+  defaults:
+    '@package':    'Intega3.Core'
+    '@controller': 'Dashboard'
+    '@action':     'index'
+    '@format':     'html'
