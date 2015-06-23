@@ -1,0 +1,32 @@
+<f:layout name="Default.html" />
+
+<f:section name="Title"><f:translate id="header.login" locale="{langDetector.language}" /></f:section>
+ 
+<f:section name="Content">
+    <f:flashMessages />
+ 
+    <f:security.ifHasRole role="User">
+        <f:then>
+            <f:link.action action="logout" controller="Login"><f:translate id="logout" locale="{langDetector.language}" /></f:link.action>
+        </f:then>
+        <f:else>
+            <f:form action="authenticate" method="post" name="loginform">
+            	<fieldset>
+            		<legend><f:translate id="form.login" locale="{langDetector.language}" /></legend>
+            		
+            		<p>
+            			<label for="username"><f:translate id="username" locale="{langDetector.language}" />:</label>
+            			<f:form.textfield id="username" name="__authentication[TYPO3][Flow][Security][Authentication][Token][UsernamePassword][username]" />
+            		</p>
+	                <p>
+	                	<label for="password"><f:translate id="password" locale="{langDetector.language}" />:</label>
+	                	<f:form.password id="password" name="__authentication[TYPO3][Flow][Security][Authentication][Token][UsernamePassword][password]" />
+	                </p>
+	                <p>
+	                	<f:form.submit value="{f:translate(id:'login' locale:langDetector.language)}" />
+	                </p>
+                </fieldset>
+            </f:form>
+        </f:else>
+    </f:security.ifHasRole>
+</f:section>

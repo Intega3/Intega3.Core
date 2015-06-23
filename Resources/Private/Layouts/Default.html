@@ -4,8 +4,14 @@
 		<meta charset="utf-8">
 		<title><f:render section="Title" /></title>
 		<f:base />
+		
+		<link rel="stylesheet" href="<f:uri.resource path='Vendor/font-awesome/css/font-awesome.min.css' />" />
 	</head>
 	<body>
+	    <header class="header">
+            <f:render partial="SettingsNavigation" arguments="{_all}" />
+        </header>
+	    
 		<f:flashMessages class="flashmessages" />
 
 		<h1><f:render section="Title" /></h1>

@@ -1,0 +1,30 @@
+<f:layout name="Default.html" />
+
+<f:section name="Title"><f:translate id="header.registration" locale="{langDetector.language}" /></f:section>
+
+<f:section name="Content">
+ 
+    <f:flashMessages />
+ 
+    <f:form action="doCreateUser" controller="Administration" method="post">
+        <fieldset>
+            <legend><f:translate id="form.register" locale="{langDetector.language}" /></legend>
+            
+            <p>
+                <label><f:translate id="username" locale="{langDetector.language}" />:</label>
+                <f:form.textfield name="name" />
+            </p>
+            <p>
+                <label><f:translate id="password" locale="{langDetector.language}" />:</label>
+                <f:form.password name="pass" />
+            </p>
+            <p>
+                <label><f:translate id="password2" locale="{langDetector.language}" />:</label>
+                <f:form.password name="pass2" />
+            </p>
+            <p>
+                <f:form.submit value="{f:translate(id:'register' locale:langDetector.language)}" />
+            </p>
+        </fieldset>
+    </f:form>
+</f:section>

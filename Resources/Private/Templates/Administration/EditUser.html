@@ -1,0 +1,33 @@
+<f:layout name="Default" />
+
+<f:section name="Title"><f:translate id="administration.users" locale="{langDetector.language}" /></f:section>
+
+<f:section name="Content">
+	<f:if condition="{account}">
+        <f:then>
+            <h2>{account.party.name.fullName}</h2>
+            <table class="table">
+                <tr>
+                    <th>Username</th>
+                    <th>Full name</th>
+                    <th>Creation Date</th>
+                    <th>Status</th>
+                    <th>Options</th>
+                </tr>
+                <tr>
+                    <td>
+                        {account.accountidentifier}
+                    </td>
+                    <td>
+                        {account.party.name.fullName}
+                    </td>
+                    <td><f:format.date>{account.creationdate}</f:format.date></td>
+                    <td><span class="label label-success">Active</span></td>
+                </tr>
+            </table>
+        </f:then>
+        <f:else>
+            <p>No account given.</p>
+        </f:else>
+    </f:if>
+</f:section>
