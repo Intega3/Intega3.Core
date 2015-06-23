@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="header.home">
+        <source>Dashboard</source>
+      </trans-unit>
+      <trans-unit id="header.registration">
+        <source>Registration</source>
+      </trans-unit>
+      <trans-unit id="header.login">
+        <source>Login</source>
+      </trans-unit>
+      <trans-unit id="header.dashboard">
+        <source>Dashboard</source>
+      </trans-unit>
+      <trans-unit id="username">
+        <source>Username</source>
+      </trans-unit>
+      <trans-unit id="password">
+        <source>Password</source>
+      </trans-unit>
+      <trans-unit id="password2">
+        <source>Password (repeat)</source>
+      </trans-unit>
+      <trans-unit id="login">
+        <source>Login</source>
+      </trans-unit>
+      <trans-unit id="logout">
+        <source>Logout</source>
+      </trans-unit>
+      <trans-unit id="register">
+        <source>Sign up</source>
+      </trans-unit>
+      <trans-unit id="form.register">
+        <source>Registration form</source>
+      </trans-unit>
+      <trans-unit id="form.login">
+        <source>Login form</source>
+      </trans-unit>
+      <trans-unit id="label.register">
+        <source>Register here!</source>
+      </trans-unit>
+      <trans-unit id="label.noAccount">
+        <source>Not yet an account?</source>
+      </trans-unit>
+      <trans-unit id="settings.index">
+        <source>Settings</source>
+      </trans-unit>
+      <trans-unit id="settings.messages">
+        <source>Messages</source>
+      </trans-unit>
+      <trans-unit id="settings.user">
+        <source>Personal settings</source>
+      </trans-unit>
+      <trans-unit id="system.intega">
+        <source>Intega3</source>
+      </trans-unit>
+      <trans-unit id="administration.configuration">
+        <source>Configuration</source>
+      </trans-unit>
+      <trans-unit id="administration.users">
+        <source>Users</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff> 

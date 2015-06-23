@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="header.home">
+        <source>Dashboard</source>
+        <target>Dashboard</target>
+      </trans-unit>
+      <trans-unit id="header.registration">
+        <source>Registration</source>
+        <target>Registierung</target>
+      </trans-unit>
+      <trans-unit id="header.login">
+        <source>Login</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="header.dashboard">
+        <source>Dashboard</source>
+        <target>Übersicht</target>
+      </trans-unit>
+      <trans-unit id="username">
+        <source>Username</source>
+        <target>Benutzername</target>
+      </trans-unit>
+      <trans-unit id="password">
+        <source>Password</source>
+        <target>Passwort</target>
+      </trans-unit>
+      <trans-unit id="password2">
+        <source>Password (repeat)</source>
+        <target>Passwort (wiederholen)</target>
+      </trans-unit>
+      <trans-unit id="login">
+        <source>Login</source>
+        <target>Anmelden</target>
+      </trans-unit>
+      <trans-unit id="logout">
+        <source>Logout</source>
+        <target>Abmelden</target>
+      </trans-unit>
+      <trans-unit id="register">
+        <source>Sign up</source>
+        <target>Registrieren</target>
+      </trans-unit>
+      <trans-unit id="form.register">
+        <source>Registration form</source>
+        <target>Registrierungsformular</target>
+      </trans-unit>
+      <trans-unit id="form.login">
+        <source>Login form</source>
+        <target>Anmeldeformular</target>
+      </trans-unit>
+      <trans-unit id="label.register">
+        <source>Register here!</source>
+        <target>Zur Registierung!</target>
+      </trans-unit>
+      <trans-unit id="label.noAccount">
+        <source>Not yet an account?</source>
+        <target>Hast du noch keinen Account?</target>
+      </trans-unit>
+      <trans-unit id="settings.index">
+        <source>Settings</source>
+        <target>Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="settings.messages">
+        <source>Messages</source>
+        <target>Benachrichtigungen</target>
+      </trans-unit>
+      <trans-unit id="settings.user">
+        <source>Personal settings</source>
+        <target>Benutzer-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="system.intega">
+        <source>Intega3</source>
+        <target>Intega3</target>
+      </trans-unit>
+      <trans-unit id="administration.configuration">
+        <source>Configuration</source>
+        <target>Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="administration.users">
+        <source>Users</source>
+        <target>Benutzer</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff> 
