@@ -1,9 +1,17 @@
 {
     "name": "intega3/core",
     "type": "typo3-flow-package",
-    "description": "Add description here",
+    "description": "Intega3 Core package - OpenSource Intranet System",
+    "authors": [
+        {
+            "name": "Martin Tepper",
+            "email": "martintepper@dev-mt.de ",
+            "role": "Founder"
+        }
+    ],
     "require": {
-        "typo3/flow": "*"
+        "typo3/flow": "3.0.*",
+        "typo3/party": "3.0.*"
     },
     "autoload": {
         "psr-0": {
