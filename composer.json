@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "intega3/template": "*",
         "typo3/flow": "3.0.*",
         "typo3/party": "3.0.*"
     },
