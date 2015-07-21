@@ -1,7 +1,9 @@
 {
     "name": "intega3/core",
     "type": "typo3-flow-package",
-    "description": "Intega3 Core package - OpenSource Intranet System",
+    "description": "Intega3 OpenSource Intranet System - Core package",
+    "version": "0.1.0-dev",
+    "license": "GPL-3.0+",
     "authors": [
         {
             "name": "Martin Tepper",
@@ -10,7 +12,8 @@
         }
     ],
     "require": {
-        "intega3/template": "*",
+        "intega3/template": "0.0.*",
+        "intega3/locale": "0.0.*",
         "typo3/flow": "3.0.*",
         "typo3/party": "3.0.*"
     },
