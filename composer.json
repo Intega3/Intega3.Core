@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "intega3/template": "0.0.*",
-        "intega3/locale": "0.0.*",
+        "intega3/template": "@dev",
+        "intega3/locale": "@dev",
         "typo3/flow": "3.0.*",
         "typo3/party": "3.0.*"
     },
