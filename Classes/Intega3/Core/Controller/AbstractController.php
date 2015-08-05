@@ -16,6 +16,12 @@ use TYPO3\Flow\Annotations as Flow;
 class AbstractController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
     /**
+     * Name of default user role
+     * @var string
+     */
+    protected $defaultUserRole = 'Intega3.Core:User';
+
+    /**
      * @var \TYPO3\Flow\I18n\Locale
      */
     protected $lang;
@@ -25,6 +31,17 @@ class AbstractController extends \TYPO3\Flow\Mvc\Controller\ActionController {
      * @Flow\Inject
      */
     protected $packageManager;
+
+    /**
+     * @var \TYPO3\Party\Domain\Model\Person
+     */
+    protected $partyAccount = false;
+
+    /**
+     * @Flow\Inject
+     * @var \TYPO3\Party\Domain\Service\PartyService
+     */
+    protected $partyService;
 
 	/**
      * @var \TYPO3\Flow\Persistence\PersistenceManagerInterface
@@ -54,6 +71,12 @@ class AbstractController extends \TYPO3\Flow\Mvc\Controller\ActionController {
         $view->setTemplateRootPaths(array($packagePath . 'Resources/Private/Templates'));
         $view->setLayoutRootPath($packagePath .'Resources/Private/Layouts');
         $view->setPartialRootPath($packagePath . 'Resources/Private/Partials/');
+        
+        $this->getPartyAccount();
+        
+        if ($this->isLoggedIn()) {
+            $view->assign('fullname',$this->partyAccount->getName());
+        }
     }
 
     /**
@@ -61,5 +84,14 @@ class AbstractController extends \TYPO3\Flow\Mvc\Controller\ActionController {
      */
     protected function isLoggedIn() {
         return $this->securityContext->getAccount();
+    }
+    
+    /**
+     * @return \TYPO3\Flow\Security\Account
+     */
+    private function getPartyAccount() {
+        if ($this->isLoggedIn()) {
+            $this->partyAccount = $this->partyService->getAssignedPartyOfAccount($this->securityContext->getAccount());
+        }
     }
 }

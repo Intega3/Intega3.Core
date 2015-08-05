@@ -15,7 +15,7 @@ class DashboardController extends AbstractController {
 	 */
 	public function indexAction() {
 	    
-        if($this->securityContext->hasRole('AuthenticatedUser') === FALSE) {
+        if($this->securityContext->hasRole($this->defaultUserRole) === FALSE) {
             $this->redirect('index', 'Login');
         }
 	}

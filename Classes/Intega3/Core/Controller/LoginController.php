@@ -39,7 +39,7 @@ class LoginController extends AbstractController {
      
     public function logoutAction() {
         $this->authenticationManager->logout();
-        $this->flashMessageContainer->addMessage(new \TYPO3\Flow\Error\Error('Successfully logged out.'));
+        $this->flashMessageContainer->addMessage(new \TYPO3\Flow\Error\Message('Successfully logged out.'));
         $this->redirect('index', 'Login');
     }
 

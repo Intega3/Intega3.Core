@@ -20,6 +20,7 @@ class AdministrationController extends AbstractController {
      * @var \TYPO3\Party\Domain\Repository\PartyRepository
      */
     protected $partyRepository;
+        
     /**
      * @Flow\Inject
      * @var \TYPO3\Flow\Security\AccountFactory
