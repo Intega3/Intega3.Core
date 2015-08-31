@@ -19,5 +19,4 @@ class DashboardController extends AbstractController {
             $this->redirect('index', 'Login');
         }
 	}
-
 }

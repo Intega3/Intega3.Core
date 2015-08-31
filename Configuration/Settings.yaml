@@ -1,5 +1,9 @@
 TYPO3:
   Flow:
+    error:
+      exceptionHandler:
+        className: 'Intega3\Core\Error\ExceptionHandler'
+
     security:
       enable: TRUE
       firewall:
@@ -14,3 +18,9 @@ TYPO3:
         providers:
           DefaultProvider:
             provider: PersistedUsernamePasswordProvider
+            entryPoint: 'WebRedirect'
+            entryPointOptions:
+              routeValues:
+                '@package': 'Intega3.Core'
+                '@controller': 'Login'
+                '@action': 'index'

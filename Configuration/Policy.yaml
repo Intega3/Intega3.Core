@@ -1,3 +1,33 @@
+privilegeTargets:
+  'TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+
+    'Intega3.Core:Administration':
+      matcher: 'method(Intega3\Core\Controller\AdministrationController->.*())'
+
+    'Intega3.Core:Dashboard':
+      matcher: 'method(Intega3\Core\Controller\DashboardController->showAction())'
+
+    'Intega3.Core:Settings':
+      matcher: 'method(Intega3\Core\Controller\SettingsController->.*())'
+      
+    'Intega3.Core:Logout':
+      matcher: 'method(Intega3\Core\Controller\SettingsController->logoutAction())'
+
 roles:
-    'Intega3.Core:User': []
-    'Intega3.Core:Admin': [User]
+  'Intega3.Core:User':
+    privileges:
+      -
+        privilegeTarget: 'Intega3.Core:Dashboard'
+        permission: GRANT
+      -
+        privilegeTarget: 'Intega3.Core:Settings'
+        permission: GRANT
+      -
+        privilegeTarget: 'Intega3.Core:Logout'
+        permission: GRANT
+  'Intega3.Core:Admin': 
+    parentRoles: [Intega3.Core:User]
+    privileges:
+      -
+        privilegeTarget: 'Intega3.Core:Administration'
+        permission: GRANT
