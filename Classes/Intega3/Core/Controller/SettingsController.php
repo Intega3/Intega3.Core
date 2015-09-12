@@ -27,7 +27,7 @@ class SettingsController extends AbstractController {
     /**
      * @return void
      */
-    public function userAction() {
+    public function profileAction() {
         
     }
 }
