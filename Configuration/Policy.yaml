@@ -12,6 +12,9 @@ privilegeTargets:
       
     'Intega3.Core:Logout':
       matcher: 'method(Intega3\Core\Controller\SettingsController->logoutAction())'
+      
+    'Intega3.Core:PackageManager':
+      matcher: 'method(Intega3\Core\Controller\PackageManagerController->.*())'
 
 roles:
   'Intega3.Core:User':
@@ -30,4 +33,7 @@ roles:
     privileges:
       -
         privilegeTarget: 'Intega3.Core:Administration'
+        permission: GRANT
+      -
+        privilegeTarget: 'Intega3.Core:PackageManager'
         permission: GRANT
