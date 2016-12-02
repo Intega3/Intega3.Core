@@ -10,7 +10,7 @@ use TYPO3\Flow\Annotations as Flow;
 
 class AdministrationController extends AbstractController {
 
-        /**
+    /**
      * @Flow\Inject
      * @var \TYPO3\Flow\Security\AccountRepository
      */

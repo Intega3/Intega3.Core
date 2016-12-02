@@ -51,7 +51,7 @@ class ExceptionHandler extends ProductionExceptionHandler {
      * @param \Exception $exception
      * @return void
      */
-    protected function echoExceptionWeb(\Exception $exception) {
+    protected function echoExceptionWeb($exception) {
         $this->initialize();
         
         switch($exception->getStatusCode()) {
